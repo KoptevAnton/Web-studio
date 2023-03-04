@@ -1,0 +1,20 @@
+/* portfolio section */
+.portfolio-section{
+   &__list-btn {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 34px;
+      @media (max-width: 767px){
+        flex-wrap: wrap;
+        justify-content: left;
+      }
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+}
+  
+  
