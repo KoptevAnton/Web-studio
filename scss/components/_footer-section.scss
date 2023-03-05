@@ -24,6 +24,9 @@
       gap: 28px;
       flex-direction: column;
       align-items: center;
+      @media (min-width: 1200px) {
+      align-items: start;
+      }
     }
     
     &__contact-list {
@@ -32,7 +35,7 @@
       align-items: center;
       gap: 12px;
       @media (min-width: 1200px) {
-        gap: 9px;
+        align-items: start;
       }
     }
     

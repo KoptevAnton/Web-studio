@@ -56,18 +56,23 @@
     &__social-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
-        word-spacing: 10px;
+        gap: 21px;
     }
     &__social-item {
+        position: relative;
         font-size: 18px;  
         line-height: 1.22 ;
         color: var(--design-color);
     }
-
     &__separator {
-        color: var(--primary-dark-color-opacity20);
-    }
+        &::after  {
+            content: "";
+            position: absolute;
+            right: -11px;
+            height: 22px;
+            width: 1px;
+            background-color: var(--primary-dark-color-opacity20);
+        }    }
     
     &.is-open {
         transform: translateX(0);
