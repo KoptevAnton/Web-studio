@@ -6,7 +6,7 @@
     height: 100%;
     background-color: var(--white-color);
     transform: translateX(-100%);
-    // overflow: hidden;
+    overflow: hidden;
     transition: transform 250ms var(--timing-function);
     
     &__container{
@@ -42,6 +42,9 @@
     &__item-contacts:first-child {
         font-size: 34px;
         color: var(--design-color);
+        @media (max-width: 360px) {
+            font-size: 28px;
+        }
     }
 
     &__item-contacts:last-child {
@@ -50,8 +53,11 @@
         color: var(--secondary-dark-color);
     }
 
-    &__social {
+    &__social-list {
         display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        word-spacing: 10px;
     }
     &__social-item {
         font-size: 18px;  

@@ -1140,6 +1140,7 @@ label {
   background-color: var(--white-color);
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  overflow: hidden;
   -webkit-transition: -webkit-transform 250ms var(--timing-function);
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
@@ -1189,15 +1190,24 @@ label {
   font-size: 34px;
   color: var(--design-color);
 }
+@media (max-width: 360px) {
+  .mobile-menu__item-contacts:first-child {
+    font-size: 28px;
+  }
+}
 .mobile-menu__item-contacts:last-child {
   margin-bottom: 64px;
   font-size: 24px;
   color: var(--secondary-dark-color);
 }
-.mobile-menu__social {
+.mobile-menu__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  word-spacing: 10px;
 }
 .mobile-menu__social-item {
   font-size: 18px;
