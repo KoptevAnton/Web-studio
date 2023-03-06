@@ -6,9 +6,16 @@
     &__container {
       transform: scale(1);
       width: 100%;
-      max-width: 528px;
+      max-width: 450px;
       height: 100%;
-      max-height: 581px;
+      max-height: 609px;
+      @media (min-width: 1200px) {
+        width: 100%;
+        max-width: 528px;
+        height: 100%;
+        max-height: 581px;
+      }
+
       padding: 40px;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -27,9 +34,12 @@
     &__title {
       margin-bottom: 12px;
       font-size: 20px;
-      line-height: 1.17;
       text-align: center;
-      color: var(--primary-text-color);
+      line-height: 1.5;
+      color: var(--primary-dark-color);
+      @media (min-width: 1200px) {
+        line-height: 1.17;
+      }
     }
     
     &__form-field {

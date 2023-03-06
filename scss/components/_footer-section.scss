@@ -14,8 +14,7 @@
         align-items: baseline;
       }
       @media (min-width: 1200px) {
-        justify-content: left;
-        gap: 70px;
+        gap: 94px;
       }
     
     }
@@ -45,15 +44,17 @@
     &__social-container{
       display: flex;
       flex-direction: column;
+      gap: 20px;
     }
-    &__social-title {
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 20px;
+    &__title {
+      text-align: center;
       line-height: 1.17;
       font-size: 14px;
       text-transform: uppercase;
       color: var(--white-color);
+      @media (min-width: 1200px) {
+        text-align: start;
+      }
     }
     &__social-list {
       display: flex;
@@ -80,40 +81,20 @@
     &__form-container {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      gap: 20px;
+    }
+
+    &__form-btn {
+      display: flex;
+      flex-direction: column;
       gap: 20px;
       @media (min-width: 1200px) {
-
-        position: absolute;
-        top: 7px;
-        right: 15px;
-        width: 570px;
-        height: 86px;
+        flex-direction: row;
       }
-    }
-    
-    &__form-title {
-    
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 1.7;
-      color: var(--white-color);
-      @media (min-width: 1200px) {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-
     }
     
     &__form {
       position: relative;
-      @media (min-width: 1200px) {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-      }
-    
     }
     
     &__form-input {
@@ -149,11 +130,6 @@
     
     &__btn {
       gap: 10px;
-      @media (min-width: 1200px) {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
     }
     
     &__subscribe-icon {
