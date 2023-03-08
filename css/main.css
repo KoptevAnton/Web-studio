@@ -743,6 +743,7 @@ label {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.17;
+  text-transform: uppercase;
   color: var(--primary-dark-color);
 }
 @media (max-width: 768px) {
