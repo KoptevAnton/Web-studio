@@ -65,14 +65,73 @@
     <main>
       <!-- hero-section -->
       <section class="hero-section">
-        <div class="container">
-          <div class="hero-section__title-center">
-            <h1 class="hero-section__title">
-              Ефективні рішення для <br />
-              вашого бізнесу
-            </h1>
-          </div>
+        <div class="hero-section__thumb">
+          <picture>
+            <source
+              srcset="
+                ./images/bgi-desktop.webp    1x,
+                ./images/bgi-desktop@2x.webp 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/webp"
+            />
 
+            <source
+              srcset="
+                ./images/bgi-desktop.jpg    1x,
+                ./images/bgi-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1200px)"
+              type="image/jpeg"
+            />
+
+            <source
+              srcset="
+                ./images/bgi-landscape-normal.webp    1x,
+                ./images/bgi-landscape-normal@2x.webp 2x
+              "
+              media="(min-width: 768px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/bgi-landscape-normal.jpg    1x,
+                ./images/bgi-landscape-normal@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+              type="image/jpg"
+            />
+
+            <source
+              srcset="
+                ./images/bgi-portrait.webp    1x,
+                ./images/bgi-portrait@2x.webp 2x
+              "
+              type="image/webp"
+            />
+
+            <source
+              srcset="
+                ./images/bgi-portrait.jpg    1x,
+                ./images/bgi-portrait@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+
+            <img
+              class="hero-section__img"
+              src="./images/bgi-desktop.jpg"
+              alt="команда працює над проєктом"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="hero-section__container container">
+          <h1 class="hero-section__title">
+            Ефективні рішення для <br />
+            вашого бізнесу
+          </h1>
           <button class="btn-studia" type="button" data-modal-open>
             Замовити послугу
           </button>
@@ -142,40 +201,64 @@
           <ul class="list activity-section__list">
             <li>
               <div class="activity-section__img-wrapper">
-                <picture>                
-                  <source srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x" type="image/jpeg">
-                  <img                 
-                  src="./images/box1.jpg"
-                  alt="людина друкує на клавіатурі"
-                  width="370"
-                />
-              </picture>              
+                <picture>
+                  <source
+                    srcset="./images/box1.webp 1x, ./images/box1@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/box1.jpg"
+                    alt="людина друкує на клавіатурі"
+                    width="370"
+                    loading="lazy"
+                  />
+                </picture>
                 <h3 class="activity-section__text">Десктопні додатки</h3>
               </div>
             </li>
             <li>
               <div class="activity-section__img-wrapper">
-                <picture>                
-                  <source srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" type="image/jpeg">
-                  <img                 
-                  src="./images/box2.jpg"
-                  alt="людина тримає у руці телефон"
-                  width="370"
-                />
-              </picture>               
+                <picture>
+                  <source
+                    srcset="./images/box2.webp 1x, ./images/box2@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/box2.jpg"
+                    alt="людина тримає у руці телефон"
+                    width="370"
+                    loading="lazy"
+                  />
+                </picture>
                 <h3 class="activity-section__text">Мобільні додатки</h3>
               </div>
             </li>
             <li>
               <div class="activity-section__img-wrapper">
-                <picture>                
-                  <source srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" type="image/jpeg">
-                  <img                 
-                  src="./images/box3.jpg"
-                  alt="людина користується планшетом"
-                  width="370"
-                />
-              </picture>                
+                <picture>
+                  <source
+                    srcset="./images/box3.webp 1x, ./images/box3@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/box3.jpg"
+                    alt="людина користується планшетом"
+                    width="370"
+                    loading="lazy"
+                  />
+                </picture>
                 <h3 class="activity-section__text">Дизайнерські рішення</h3>
               </div>
             </li>
@@ -189,14 +272,22 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="list team-section__list">
             <li class="team-section__item">
-              <picture>                
-                <source srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" type="image/jpeg">
+              <picture>
+                <source
+                  srcset="./images/img.webp 1x, ./images/img@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
+                  type="image/jpeg"
+                />
                 <img
-                src="./images/img.jpg"
-                alt="фото Ігоря Дем'яненка"
-              />
-            </picture>
-              
+                  src="./images/img.jpg"
+                  alt="фото Ігоря Дем'яненка"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-section__meta">
                 <h3 class="team-section__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-section__text">Product Designer</p>
@@ -247,14 +338,22 @@
               </div>
             </li>
             <li class="team-section__item">
-              <picture>                
-                <source srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" type="image/jpeg">
-                <img               
-                src="./images/img1.jpg"
-                alt="фото Ольги Рєпіної"
-              />
-            </picture>
-              
+              <picture>
+                <source
+                  srcset="./images/img1.webp 1x, ./images/img1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/img1.jpg"
+                  alt="фото Ольги Рєпіної"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-section__meta">
                 <h3 class="team-section__title">Ольга Рєпіна</h3>
                 <p lang="en" class="team-section__text">Frontend Developer</p>
@@ -305,14 +404,22 @@
               </div>
             </li>
             <li class="team-section__item">
-              <picture>                
-                <source srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" type="image/jpeg">
-                <img               
-                src="./images/img2.jpg"
-                alt="фото Миколи Тарасова"
-              />
-            </picture>
-              
+              <picture>
+                <source
+                  srcset="./images/img2.webp 1x, ./images/img2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/img2.jpg"
+                  alt="фото Миколи Тарасова"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-section__meta">
                 <h3 class="team-section__title">Микола Тарасов</h3>
                 <p lang="en" class="team-section__text">Marketing</p>
@@ -363,14 +470,22 @@
               </div>
             </li>
             <li class="team-section__item">
-              <picture>                
-                <source srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" type="image/jpeg">
-                <img               
-                src="./images/img3.jpg"
-                alt="фото Михайла Єрмакова"
-              />
-            </picture>
-              
+              <picture>
+                <source
+                  srcset="./images/img3.webp 1x, ./images/img3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/img3.jpg"
+                  alt="фото Михайла Єрмакова"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-section__meta">
                 <h3 class="team-section__title">Михайло Єрмаков</h3>
                 <p lang="en" class="team-section__text">UI Designer</p>
@@ -555,30 +670,33 @@
           <!-- footer-subscribe -->
           <div class="footer-section__form-container">
             <h2 class="footer-section__title">Підпишіться на розсилку</h2>
-            <div class="footer-section__form-btn"><form name="footer-section__form" autocomplete="on" novalidate>
-              <div class="footer-section__form">
-                <input
-                  class="footer-section__form-input"
-                  id="footer-user-email"
-                  type="email"
-                  name="user-email"
-                />
-                <label for="footer-user-email">
-                  <span class="footer-section__form-label">E-mail</span></label
+            <div class="footer-section__form-btn">
+              <form name="footer-section__form" autocomplete="on" novalidate>
+                <div class="footer-section__form">
+                  <input
+                    class="footer-section__form-input"
+                    id="footer-user-email"
+                    type="email"
+                    name="user-email"
+                  />
+                  <label for="footer-user-email">
+                    <span class="footer-section__form-label"
+                      >E-mail</span
+                    ></label
+                  >
+                </div>
+              </form>
+              <button class="btn-studia footer-section__btn" type="submit">
+                Підписатися
+                <svg
+                  class="footer-section__subscribe-icon"
+                  width="24"
+                  height="24"
                 >
-              </div>
-            </form>
-            <button class="btn-studia footer-section__btn" type="submit">
-              Підписатися
-              <svg
-                class="footer-section__subscribe-icon"
-                width="24"
-                height="24"
-              >
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </div>           
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -622,21 +740,19 @@
 
           <ul class="list mobile-menu__social-list">
             <li class="mobile-menu__social-item mobile-menu__separator">
-              <a class="link " href="#">Instagram</a>
+              <a class="link" href="#">Instagram</a>
             </li>
             <li class="mobile-menu__social-item mobile-menu__separator">
-              <a class="link " href="#">Twitter</a>
+              <a class="link" href="#">Twitter</a>
             </li>
             <li class="mobile-menu__social-item mobile-menu__separator">
-              <a class="link " href="#">Facebook</a>
+              <a class="link" href="#">Facebook</a>
             </li>
             <li class="mobile-menu__social-item">
-              <a class="link " href="#">LinkedI</a>
+              <a class="link" href="#">LinkedI</a>
             </li>
           </ul>
-
         </nav>
-        
       </div>
     </div>
     <!-- modal -->

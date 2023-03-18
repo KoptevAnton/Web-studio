@@ -157,10 +157,24 @@ label {
 
 /* container */
 .container {
-  max-width: 1200px;
+  min-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
-  overflow-x: hidden;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* section */
@@ -638,61 +652,21 @@ label {
 
 /* hero-sections */
 .hero-section {
+  position: relative;
   max-width: 1600px;
-  width: 100%;
-  margin: 0 auto;
   padding: 118px 0;
-  background-color: var(--dark-bgc);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgi-portrait.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi-portrait.jpg);
-  background-size: cover;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-section {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgi-portrait@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi-portrait@2x.jpg);
-    background-size: cover;
-  }
-}
-@media (min-width: 768px) {
-  .hero-section {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgi-landscape-normal.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi-landscape-normal.jpg);
-    background-size: cover;
-  }
-}
-@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero-section {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgi-landscape-normal@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi-landscape-normal@2x.jpg);
-    background-size: cover;
-  }
+  margin: 0 auto;
 }
 @media (min-width: 1200px) {
   .hero-section {
     padding: 200px 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgi.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi.jpg);
-    background-position: center;
   }
 }
-@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero-section {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgi@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi@2x.jpg);
-    background-size: cover;
-  }
-}
-.hero-section__title-center {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.hero-section__container {
+  position: relative;
 }
 .hero-section__title {
-  margin: 0 auto 30px;
+  margin-bottom: 30px;
   color: var(--white-color);
   font-size: 26px;
   line-height: 1.62;
@@ -705,6 +679,19 @@ label {
     font-size: 44px;
     line-height: 1.36;
   }
+}
+.hero-section__thumb {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-section__img {
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* benefits-section */
@@ -909,6 +896,7 @@ label {
 
 /* footer-section */
 .footer-section {
+  min-width: 320px;
   padding: 60px 0;
   background-color: var(--dark-bgc);
 }
