@@ -1,3 +1,5 @@
+A responsive web design for a digital agency showcasing their services, team, and clients with a modern and professional.
+
 Project Highlights: 
 1. Creation of a responsive web design that works well on various devices and screen resolutions 
 2. Implementation of BEM methodology for CSS naming convention 
